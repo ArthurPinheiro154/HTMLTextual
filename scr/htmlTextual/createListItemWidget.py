@@ -1,8 +1,8 @@
-from .widgetCreateBase import WidgetCreateBase
+from .createWidgetBase import CreateWidgetBase
 from textual.widget import Widget
 from textual.widgets import ListItem
 
-class ListItemCreateWidget(WidgetCreateBase):
+class CreateListItemWidget(CreateWidgetBase):
     def create(self, attributes:dict) -> Widget:
         return ListItem(
             attributes['children'],

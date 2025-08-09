@@ -1,8 +1,8 @@
-from .widgetCreateBase import WidgetCreateBase
+from .createWidgetBase import CreateWidgetBase
 from textual.widget import Widget
 from textual.widgets import Button
 
-class ButtonWidget(WidgetCreateBase):
+class CreateButtonWidget(CreateWidgetBase):
     def create(self, attributes:dict) -> Widget:
         return Button(
             label=      attributes['label'],

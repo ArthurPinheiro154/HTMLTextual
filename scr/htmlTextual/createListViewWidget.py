@@ -1,8 +1,8 @@
-from .widgetCreateBase import WidgetCreateBase
+from .createWidgetBase import CreateWidgetBase
 from textual.widget import Widget
 from textual.widgets import ListView
 
-class ListViewCreateWidget(WidgetCreateBase):
+class CreateListViewWidget(CreateWidgetBase):
     def create(self, attributes:dict) -> Widget:
         return ListView(
             attributes['listItems'],

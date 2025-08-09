@@ -63,7 +63,30 @@ def main():
     
     listView = fabric.create('listView', listViewAttributes)
 
-    app = test([lable, button, listView])
+    inputAttributes = {
+        'value':            None, 
+        'placeHolder':      "",
+        'highlighter':      None,
+        'password':         False,
+        'restrict':         None,
+        'type':             'text',
+        'max_length':       0,
+        'suggester':        None, 
+        'validators':       None,
+        'validate_on':      None,
+        'valid_empty':      False,
+        'select_on_focus':  True,
+        'name':             None,
+        'id':               None,
+        'classes':          None,
+        'disabled':         False,
+        'tooltip':          None,
+        'compact':          False
+    }
+
+    input = fabric.create('input', inputAttributes)
+
+    app = test([lable, button, listView, input])
     app.run()
 
 if __name__== '__main__':
